@@ -1,2 +1,5 @@
-# lstm_reshape
-### This module provides a single function that converts a multivariate time series dataframe into a supervised learning - style dataframe by flattening and shifting each series along a given lagging period. For example, when one tries to use keras on a 2-D tensor of shape (total_time_steps, no_features), it's required to reshape the tensor into a 3-D tensor of input_shape (no_features, time_steps, batch_size).  
+# lstm_reshaper
+### This module provides a single function that converts a multivariate time series dataframe into a supervised learning - style dataframe 
+### When using Keras LSTM for sequence modeling tasks, the input data is typically represented as a 2D tensor with shape (num_samples, num_timesteps). Here, num_samples represents the number of data points in the dataset, and num_timesteps represents the length of each sequence.
+
+### However, LSTM requires a 3D input shape of (num_samples, num_timesteps, num_features), where num_features represents the number of features in each time step. To convert the 2D tensor to a 3D tensor, we can use this lstm reshaper
